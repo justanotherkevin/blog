@@ -1,0 +1,13 @@
+/**
+ * Blog index page styles
+ */
+.feat-image {
+  max-width: 200px;
+}
+
+#container .grow {
+  transition: all .15s ease-in-out;
+}
+#container .grow:hover {
+  transform: scale(2);
+}

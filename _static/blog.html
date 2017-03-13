@@ -1,0 +1,25 @@
+---
+layout: page
+tag: blog
+title: Blog/Project
+static-page: true
+permalink: /blog/
+---
+
+<div id="container">
+  <div id="grid" data-columns class="cols">
+
+    {% for post in site.posts %}
+    <div class="box" style="background-color:#{{post.color}}">
+      <div class="container">
+        <a href="{{post.url | prepend: site.baseurl}}"><h4>{{post.title}}</h4></a>
+        <p>{{post.description}}</p>
+        {% if post.img %}
+        <img class="feat-image grow" src={{ "/assets/development/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+        {% endif %}
+        <div class="action">{{ post.date | date: '%B %d, %Y' }}</div>
+      </div>
+    </div>
+   {% endfor %}
+  </div>
+</div>

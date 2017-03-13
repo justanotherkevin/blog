@@ -1,0 +1,46 @@
+#
+#  Config file
+#
+#  If you make changes to this file while your Jekyll server is running,
+#  You'll need to restart your server.
+# ---------------------------------------------------------------------
+
+# Permalinks
+permalink:        pretty
+
+# Your site's full URL, e.g. "https://my-site.com" - leave this empty
+# until you have/own a domain and a CNAME file.
+# Set URL to '' in case of hosting on `http://<your-github-name>.github.io`
+url: 'http://polymer940c.github.io'
+# Set baseurl to repo that you will host all the files
+baseurl: '/blog/'
+
+
+# Site settings
+title: ❤︎
+
+description: > # this means to ignore newlines until "baseurl:"
+  Your site description here.
+
+author:
+  name:    'Kevin Hu'
+  twitter: your_twitter_username
+  github:  'https://github.com/polymer940c'
+
+  # This photo will be used in the about section
+  photo:   /assets/computer.jpg
+
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:          |
+    Your author description here.
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+
+# Adding static pages through `_static/` folder
+include: ['_static']
