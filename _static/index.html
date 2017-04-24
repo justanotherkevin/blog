@@ -5,17 +5,21 @@ static-page: true
 title: Kevin Hu
 ---
 
-<section> 
+<section>
     <header>
         <div id="header_text">
-            <div class="social"><a href="#"><i class="icon ion-social-github header_icon"></i></a><a href="#" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" data-aos-once="true"><i class="icon ion-social-google header_icon"></i></a><a href="#" data-aos="fade-up"
-                data-aos-duration="600" data-aos-delay="150" data-aos-once="true"><i class="icon ion-social-linkedin header_icon"></i></a><a href="#"><i class="icon ion-ios-paper header_icon"></i></a></div>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-github header_icon"></i></a>
+                <a href="#"><i class="icon ion-social-google header_icon"></i></a>
+                <a href="#"><i class="icon ion-social-linkedin header_icon"></i></a>
+                <a href="#"><i class="icon ion-ios-paper header_icon"></i></a>
+            </div>
             <p>I am _____</p>
         </div>
     </header>
     <ul class="nav nav-pills categories">
-        <li class="active"><a href="#">Projects </a></li>
-        <li><a href="#">Blog </a></li>
+        <li class="active"><a class="navbar-link" href="{{ site.baseurl }}">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/brain/">Noodle</a></li>
     </ul>
     <div class="container summary">
         <div class="row">
@@ -24,8 +28,7 @@ title: Kevin Hu
                 <p class="author"><strong>kevin hu</strong><span class="text-muted">October 6th 2015 </span></p>
             </div>
             <div class="col-md-6 col-md-offset-0 post-body">
-                <p>Medicine is a deeply traditional field of practice. But tradition isn't always the best, it can even be harmful. After seeing the inner working&nbsp; of the medical and healthcare system, I know that it could be better. Better delivery
-                    of healthcare, service, and knowledge.&nbsp; </p>
+                <p>Medicine is a deeply traditional field of practice. But tradition isn't always the best, it can even be harmful. After seeing the inner working&nbsp; of the medical and healthcare system, I know that it could be better. Better delivery of healthcare, service, and knowledge.&nbsp; </p>
                 <p>"Never accept the world as it appears to be,, dare to see it for what it could be." -Overwatch, Harold Winston </p>
             </div>
         </div>
@@ -34,16 +37,21 @@ title: Kevin Hu
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Projects </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
             </div>
-            <div class="row projects">
-                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/desk.jpg">
-                    <h3 class="name">Project Name</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+
+            {% for project in site.data.project %}
+            <h2>{{project.name}}</h2>
+            {% endfor %}
+
+
+            <!-- <div class="row projects">
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="/assets/production/images/TTT.gif">
+                    <h3 class="name">Tic Tac Toe </h3>
+                    <p class="description">A game of tic­tac­toe with a twist. An unbeatable AI is implemented using min­-max algorithm that calculates the most valued move. The computer will make the more that will neat the heighet value, therefore it will always either tie or win the round. The program is made purely in Javascript, HTML, and CSS.</p>
                 </div>
-                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/building.jpg">
-                    <h3 class="name">Project Name</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="/assets/production/images/mapyourstock.gif">
+                    <h3 class="name">MapYourStock</h3>
+                    <p class="description">Stock ticker tracker where the user can pick stocks to store into their profile. Created with React.js front end, Postgres database, Ruby on Rails framework. Yahoo stock API call, from persistent user data.</p>
                 </div>
                 <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/loft.jpg">
                     <h3 class="name">Project Name</h3>
@@ -53,7 +61,7 @@ title: Kevin Hu
                     <h3 class="name">Project Name</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
