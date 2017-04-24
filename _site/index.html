@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-  <link rel="stylesheet" href="assets/stylesheets/styles.min.css">
+  <!-- <link rel="stylesheet" href="/blog//assets/production/stylesheets/styles.min.css"> -->
 
 
   <!-- Raleway font for the skeleton -->
@@ -24,7 +24,7 @@
   <!-- <link rel="stylesheet" href="/blog//assets/production/stylesheets/font-awesome.min.css"> -->
 
   <!-- Site's compiled CSS -->
-  <!-- <link rel="stylesheet" href="/blog//assets/production/stylesheets/main.min.css"> -->
+  <link rel="stylesheet" href="/blog//assets/production/stylesheets/main.min.css">
 
   <!-- <link rel="canonical" href="http://localhost:4000/blog//" /> -->
 
@@ -90,26 +90,58 @@
 
 
     <main>
-      <div class="about-content">
-
-    <div class="">
-      <img id="about-banner" src="assets/development/images/banner.jpg" alt="">
+      <section> 
+    <header>
+        <div id="header_text">
+            <div class="social"><a href="#"><i class="icon ion-social-github header_icon"></i></a><a href="#" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" data-aos-once="true"><i class="icon ion-social-google header_icon"></i></a><a href="#" data-aos="fade-up"
+                data-aos-duration="600" data-aos-delay="150" data-aos-once="true"><i class="icon ion-social-linkedin header_icon"></i></a><a href="#"><i class="icon ion-ios-paper header_icon"></i></a></div>
+            <p>I am _____</p>
+        </div>
+    </header>
+    <ul class="nav nav-pills categories">
+        <li class="active"><a href="#">Projects </a></li>
+        <li><a href="#">Blog </a></li>
+    </ul>
+    <div class="container summary">
+        <div class="row">
+            <div class="col-md-6 post-title">
+                <h1>From medicine to developer</h1>
+                <p class="author"><strong>kevin hu</strong><span class="text-muted">October 6th 2015 </span></p>
+            </div>
+            <div class="col-md-6 col-md-offset-0 post-body">
+                <p>Medicine is a deeply traditional field of practice. But tradition isn't always the best, it can even be harmful. After seeing the inner working&nbsp; of the medical and healthcare system, I know that it could be better. Better delivery
+                    of healthcare, service, and knowledge.&nbsp; </p>
+                <p>"Never accept the world as it appears to be,, dare to see it for what it could be." -Overwatch, Harold Winston </p>
+            </div>
+        </div>
     </div>
-
-    <div class="row">
-      <div class="six columns">
-        <!-- <p> I enjoy turning complex problems into simple, beautiful and intuitive code. When I'm not coding, you'll find me in the gym or drawing in my sketch book.</p> -->
-
-      </div>
-      <div class="six columns">
-        <a href="https://github.com/polymer940c"><i class="fa fa-github" aria-hidden="true"> Github</i> </a>
-        <a href="https://www.linkedin.com/in/kevin-w-hu/"><i class="fa fa-linkedin-square" aria-hidden="true"> Linkedin</i></a>
-        <a href="http://hissho.deviantart.com/"><i class="fa fa-deviantart" aria-hidden="true"> Deviantart</i></a>
-      </div>
-    </p>
-
-  </div>
-</div>
+    <div class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Projects </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row projects">
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/desk.jpg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/building.jpg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/loft.jpg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/minibus.jpeg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 
@@ -145,7 +177,7 @@
 <!-- <script type="text/javascript" src="/blog//assets/development/javascript/main.js"></script> -->
 
 <!-- my js file -->
-<script src="assets/javascript/script.min.js"></script>
+<script src="/blog//assets/production/javascript/script.min.js"></script>
 
 <!-- Search functionality -->
 <script src="/blog//assets/production/javascript/lunr.min.js"></script>
