@@ -4,61 +4,82 @@ permalink: /
 static-page: true
 title: Kevin Hu
 ---
+
+<section>
+    <header>
+        <div class="top_background">
+
+        </div>
+        <div id="header_text">
+            <span>Find me at</span>
+            <div class="social">
+                <a id="ion-social-github" href="#"><i class="icon ion-social-github header_icon"></i></a>
+                <span id="social_github" class="find_me">Github</span>
+                <a id="ion-social-google" href="#"><i class="icon ion-social-google header_icon"></i></a>
+                <span id="social_google" class="find_me social_google">Google</span>
+                <a id="ion-social-linkedin" href="#"><i class="icon ion-social-linkedin header_icon"></i></a>
+                <span id="social_linkedin" class="find_me social_linkedin">Linkedin</span>
+                <a href="#"><i class="icon ion-ios-paper header_icon"></i></a>
+                <span id="social_resume" class="find_me social_linkedin">My Resume</span>
+            </div>
+        </div>
+    </header>
+    <ul class="nav nav-pills categories">
+
+        <li class="active"><a class="navbar-link" href="{{ site.baseurl }}">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/brain/">Noodle</a></li>
+    </ul>
+    <div class="container summary">
+        <div class="row">
+            <div class="col-md-6 post-title">
+                <h1>From medicine to developer</h1>
+                <p class="author"><strong>kevin hu</strong></p>
+                    <!-- <span class="text-muted">October 6th 2015
+                </span></p> -->
+            </div>
+            <div class="col-md-6 col-md-offset-0 post-body">
+                <p>Medicine is a deeply traditional field of practice. But tradition isn't always the best, it can even be harmful. After seeing the inner working&nbsp; of the medical and healthcare system, I know that it could be better. Better delivery of healthcare, service, and knowledge.&nbsp; </p>
+                <p>"Never accept the world as it appears to be, dare to see it for what it could be." -Overwatch, Harold Winston </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects_clean" class="container">
+        <!-- <div class="container"> -->
+
+            <div class="intro">
+                <h2 class="text-center">Projects </h2>
+            </div>
+
+            <div class="projects">
+                {% for project in site.data.project %}
+                <div class="project_demo">
+                    <img class="img-responsive" src={{project.demo_path}}>
+                    <h3 class="project_name">{{project.name}}</h3>
+                    <p class="description">{{project.description}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        <!-- </div> -->
+    </div>
+
+</section>
 <!--
-<div class="index-wrapper">
-  <div class="container">
-
-    <div class="index-section">
-      <h1>Hello, world!</h1>
-      <p>This is a Jekyll seed application.</p>
-      <p class="lead">Your index page content would show up here.</p>
-    </div>
-
-    <div class="index-section">
-      <h2 class="header medium-header">Stuff this seed app comes with:</h2>
-
-      <ul>
-        <li><a href="http://fontawesome.io/">Font Awesome</a> icons</li>
-
-        <li>Beautiful, responsive style skeleton based on <a href="http://getskeleton.com/">skeleton.css</a>, fitted out with a lovely collapsing mobile navbar. (Resize the screen to check it out!)</li>
-
-        <li><a href="http://sass-lang.com/">Sass</a> files to manage styles</li>
-
-        <li><a href="http://gruntjs.com/">Grunt</a> to handle tasks like image resizing, uglifying your JavaScript, and compiling Sass down to CSS and minifying it.</li>
-
-        <li>Full-site search functionality with <a href="https://github.com/slashdotdash/jekyll-lunr-js-search">lunr.js</a></li>
-
-        <li>An install script for Macs to install all the dependencies</li>
-
-        <li><a href="https://github.com/viebel/klipse">klipse</a> to include awesome runnable code snippets</li>
-
-        <li>Categories and tags structure so you can get started adding new ones</li>
-      </ul>
-    </div>
-
-
-  </div>
-</div> -->
-
-
-
-<div class="about-content">
-
-    <div class="">
-      <img id="about-banner" src="/assets/development/images/banner.jpg" alt="">
-    </div>
-
-    <div class="row">
-      <div class="six columns">
-        <p class=""> I enjoy turning complex problems into simple, beautiful and intuitive code. When I'm not coding, you'll find me in the gym or drawing in my sketch book.
-
-      </div>
-      <div class="six columns">
-        <a href="https://github.com/polymer940c"><i class="fa fa-github" aria-hidden="true"> Github</i> </a>
-        <a href="https://www.linkedin.com/in/kevin-w-hu/"><i class="fa fa-linkedin-square" aria-hidden="true"> Linkedin</i></a>
-        <a href="http://hissho.deviantart.com/"><i class="fa fa-deviantart" aria-hidden="true"> Deviantart</i></a>
-      </div>
-    </p>
-
-  </div>
-</div>
+            <div class="row projects">
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="/assets/production/images/TTT.gif">
+                    <h3 class="name">Tic Tac Toe </h3>
+                    <p class="description">A game of tic­tac­toe with a twist. An unbeatable AI is implemented using min­-max algorithm that calculates the most valued move. The computer will make the more that will neat the heighet value, therefore it will always either tie or win the round. The program is made purely in Javascript, HTML, and CSS.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="/assets/production/images/mapyourstock.gif">
+                    <h3 class="name">MapYourStock</h3>
+                    <p class="description">Stock ticker tracker where the user can pick stocks to store into their profile. Created with React.js front end, Postgres database, Ruby on Rails framework. Yahoo stock API call, from persistent user data.</p>
+                </div> -->
+                <!-- <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/loft.jpg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 item"><img class="img-responsive" src="assets/img/minibus.jpeg">
+                    <h3 class="name">Project Name</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                </div> -->
+            <!-- </div> -->

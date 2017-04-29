@@ -1,0 +1,318 @@
+//colors
+$color_mine_shaft_approx: #333;
+$white_40: rgba(255, 255, 255, .4);
+$white: #fff;
+$blue: #2196f3;
+$black_60: rgba(0, 0, 0, .6);
+$black_40: rgba(0, 0, 0, .4);
+$color_mercury_approx: #e4e4e4;
+$color_gravel_approx: #4b4c4d;
+$color_celeste_approx: #ccc;
+$color_silver_chalice_approx: #aaa;
+$color_gray_approx: #7d8285;
+$black: #000;
+
+//urls
+$url_0: url(/assets/production/images/banner.jpg);
+$url_1: url(/assets/production/images/winston.jpg);
+
+//@extend-elements
+//original selectors
+//.navbar-default .navbar-nav >.active >a, .navbar-default .navbar-nav >.active >a:focus, .navbar-default .navbar-nav >.active >a:hover, .navbar-default .navbar-nav >li >a:focus, .navbar-default .navbar-nav >li >a:hover
+%extend_1 {
+	color: $white;
+	background-color: $black_60;
+	font-weight: 700;
+}
+
+header {
+	height: 400px;
+	background: $url_0 no-repeat fixed;
+	background-size: 100% auto;
+	position: relative;
+}
+.find_me {
+	visibility: hidden;
+	position: absolute;
+  top: 0;
+  right: 13px;
+}
+
+#ion-social-github:hover + #social_github{
+	visibility: visible;
+	color: $blue;
+}
+#ion-social-google:hover + #social_google{
+	visibility: visible;
+	color: $blue;
+}
+#ion-social-linkedin:hover + #social_linkedin{
+	visibility: visible;
+	color: $blue;
+}
+.navbar-nav {
+	margin-top: 14px;
+	.nav li {
+		height: 50px;
+	}
+	> li > a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		line-height: 32px;
+	}
+}
+.navbar-toggle {
+	background-color: $white!important;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1px 1px 1px $black_40;
+	margin-top: 20px;
+}
+.navbar-brand {
+	height: 75px;
+	font-size: 18px;
+	color: $white!important;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 1px 1px 1px $black_40;
+	.glyphicon {
+		display: inline-block;
+		font-size: 36px;
+		color: $white;
+		vertical-align: middle;
+		margin-right: 20px;
+		position: relative;
+		top: -2px;
+	}
+	span.text-title {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+@media(max-width:767px) {
+	#header_text {
+		display: none;
+	}
+	.navbar-brand span.text-title {
+		display: none;
+	}
+	.post-title h1 {
+		margin-top: 20px;
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	.brands a {
+		padding: 30px 0;
+	}
+	.projects-clean h2 {
+		margin-bottom: 25px;
+		padding-top: 25px;
+		font-size: 24px;
+	}
+}
+#gallery {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 80%;
+	width: 45%;
+	margin: 35px 30px;
+}
+#header_text {
+	position: absolute;
+	right: 0;
+	top: 65px;
+	font-size: 50px;
+	padding: 0 200px;
+}
+@media(min-width:768px) {
+	.navbar-nav li {
+		margin-left: 10px;
+	}
+}
+.categories {
+	text-align: center!important;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $color_mercury_approx;
+	padding: 10px;
+	li {
+		display: inline-block!important;
+		float: none;
+	}
+}
+.post-body {
+	margin-top: 30px;
+	font-size: 16px;
+	figure {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+@media(min-width:992px) {
+	.post-title {
+		text-align: right;
+		padding-right: 30px;
+	}
+}
+.post-title {
+	.author {
+		text-transform: uppercase;
+		span {
+			margin-left: 5px;
+		}
+	}
+	h1 {
+		font-weight: 700;
+		margin-top: 30px;
+	}
+}
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: $color_mine_shaft_approx;
+	color: $white;
+	h5 {
+		color: inherit;
+	}
+}
+.brands {
+	background-color: $white;
+	color: $color_mine_shaft_approx;
+	a {
+		display: block;
+		text-align: center;
+		padding: 40px 0;
+		img {
+			display: inline-block;
+			margin: 10px 20px;
+			vertical-align: middle;
+		}
+	}
+}
+.footer-basic {
+	background-color: $white;
+	color: $color_gravel_approx;
+	ul {
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		font-size: 18px;
+		line-height: 1.6;
+		margin-bottom: 0;
+		a {
+			color: inherit;
+			text-decoration: none;
+			opacity: .8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	li {
+		padding: 0 10px;
+	}
+	.social {
+		text-align: center;
+		padding-bottom: 25px;
+		> a {
+			font-size: 24px;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+			text-align: center;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			border: 1px solid $color_celeste_approx;
+			margin: 0 8px;
+			color: inherit;
+			opacity: .75;
+			&:hover {
+				opacity: .9;
+			}
+		}
+	}
+	.copyright {
+		margin-top: 15px;
+		text-align: center;
+		font-size: 13px;
+		color: $color_silver_chalice_approx;
+		margin-bottom: 0;
+	}
+}
+// PROJECT PANEL /////////////////////////////////////////////
+div#projects_clean {
+    background-color: #eeeeee;
+}
+.intro {
+  margin: 30px 150px;
+	background-color: $white;
+}
+.projects {
+	padding-bottom: 40px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+	.project_demo {
+		width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2%;
+		.img-responsive {
+			height: 200px;
+			margin: 0 auto;
+		}
+		.description {
+			max-height: 300px;
+			overflow-y: scroll;
+		}
+	}
+}
+
+@media(max-width:991px) {
+	#header_text {
+		padding-right: 10px;
+	}
+}
+
+.navbar-default .navbar-nav {
+	> li > a {
+		color: $color_mine_shaft_approx;
+		font-weight: 700;
+		background-color: $white_40;
+		&:focus {
+			@extend %extend_1;
+		}
+		&:hover {
+			@extend %extend_1;
+		}
+	}
+	> .active > a {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_1;
+		}
+		&:hover {
+			@extend %extend_1;
+		}
+	}
+}
+nav.navbar.navbar-default {
+	background: 0 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+}
+
+// SUMMARY PANNEL
+div.container.summary {
+	background: $url_1 0 -33px no-repeat fixed;
+	background-size: 1400px 100%;
+}
+.icon.header_icon {
+	margin: 30px;
+}
+
+// media queries
+@media (max-width: 1350px) {
+	header {
+		background-size: auto 44%;
+	}
+}

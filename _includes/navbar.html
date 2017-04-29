@@ -28,9 +28,7 @@
             {% assign category_data = category[1] %}
 
             <li class="navbar-item {% if page.tag == slug %}active{% endif %}">
-              <a class="navbar-link" href="{{ site.baseurl }}/{{ slug }}/">
-                {{ category_data.nav-name }}
-              </a>
+              <a class="navbar-link" href="{{ site.baseurl }}/{{ slug }}/">{{ category_data.nav-name }}</a>
             </li>
             {% endfor %}
           </div>
