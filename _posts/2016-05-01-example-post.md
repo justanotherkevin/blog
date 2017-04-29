@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "An example post"
 description: "Here's what an md file looks like with this theme."
@@ -25,4 +25,4 @@ Listening to technical and tech-light podcasts are a great way to ease yourself 
 
 <h4>And one more, plain h4</h4>
 
-Hackathons are great for collaborating with other developers in an intense way to build brand new projects from the ground up.
+Hackathons are great for collaborating with other developers in an intense way to build brand new projects from the ground up. -->

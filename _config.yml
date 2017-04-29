@@ -11,9 +11,9 @@ permalink:        pretty
 # Your site's full URL, e.g. "https://my-site.com" - leave this empty
 # until you have/own a domain and a CNAME file.
 # Set URL to '' in case of hosting on `http://<your-github-name>.github.io`
-url: 'http://polymer940c.github.io'
+url: ''
 # Set baseurl to repo that you will host all the files
-baseurl: '/blog/'
+baseurl: ''
 
 
 # Site settings
@@ -28,11 +28,11 @@ author:
   github:  'https://github.com/polymer940c'
 
   # This photo will be used in the about section
-  photo:   /assets/computer.jpg
+  # photo:   /assets/computer.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:          |
-    Your author description here.
+  # about:          |
+  #   Your author description here.
 
 # Build settings
 markdown: kramdown

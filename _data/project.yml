@@ -1,0 +1,11 @@
+- name: "Tic Tac Toe"
+  description: "A game of tic­tac­toe with a twist. An unbeatable AI is implemented using min­-max algorithm that calculates the most valued move. The computer will make the more that will neat the heighet value, therefore it will always either tie or win the round. The program is made purely in Javascript, HTML, and CSS."
+  demo_path: "assets/production/images/TTT.gif"
+
+- name: "MapYourStock"
+  description: "Stock ticker tracker where the user can pick stocks to store into their profile. Created with React.js front end, Postgres database, Ruby on Rails framework. Yahoo stock API call, from persistent user data."
+  demo_path: "/assets/production/images/mapyourstock.gif"
+
+- name: "Truthy"
+  description: "Truthy uses Machine Learning, IBM Watson Alchemy API, FullContact API, DatumBox API, and Aylien API to determine whether or not a news article is 'truthy' or 'falsey' - credible or not credible. Truthy delivers data essential to curious readers everywhere who want to know if they can trust the news they read. Truthy utilizes Ruby on Rails on the server side (back-end) and primarily React as well as jQuery on the client side (front-end). HTML5, CSS, and Bootstrap are the tools we used to design the site, giving it a clean, polished look. Additionally, we took advantage of the excellent resources available in the D3.js library create the bar chart and the bubble chart displayed on our site's data page - we felt that data visualization was a key component of providing our users with easily digestible information."
+  demo_path: "/assets/production/images/truthy.gif"

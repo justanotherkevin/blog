@@ -27,14 +27,15 @@ $on-laptop:           800px;
 
 @import
   // Components & base structures
-  "components/skeleton",
-  "components/syntax-highlighting",
-  "components/navbar",
-  "components/footer",
+  // "components/skeleton",
+  // "components/syntax-highlighting",
+  // "components/navbar",
+  // "components/footer",
+  "components/styles"
 
   // Pages
-  "pages/index",
-  "pages/blog",
-  "pages/category",
-  "pages/post"
+  // "pages/index",
+  // "pages/blog",
+  // "pages/category",
+  // "pages/post"
 ;

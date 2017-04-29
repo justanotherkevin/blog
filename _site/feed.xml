@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Mar 2017 15:45:57 -0400</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2017 15:45:57 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Sat, 29 Apr 2017 13:25:47 -0400</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 13:25:47 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>An example post2</title>
+        <title>Coming soon!</title>
         <description>
 </description>
         <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
@@ -30,44 +30,40 @@
       </item>
     
       <item>
-        <title>An example post</title>
-        <description>&lt;h2 class=&quot;header medium-header&quot;&gt;
+        <title>Example Post</title>
+        <description>&lt;!-- ---
+layout: post
+title: &quot;An example post&quot;
+description: &quot;Here's what an md file looks like with this theme.&quot;
+tags: [first-tag, second-tag]
+categories: [first-category, second-category]
+img: out.gif
+---
+
+&lt;h2 class=&quot;header medium-header&quot;&gt;
   h2 header with 'header mediulemkmrekmlkercm-header' class
 &lt;/h2&gt;
 
-&lt;p&gt;Local events and meetups are great ways to get involved with other developers, learn, contribute, and make connections. Don’t wait until you are ready to look for work: let it be a part of what it means for you to become a web developer in the first place.&lt;/p&gt;
+Local events and meetups are great ways to get involved with other developers, learn, contribute, and make connections. Don't wait until you are ready to look for work: let it be a part of what it means for you to become a web developer in the first place.
 
 &lt;h3 class=&quot;header small-header&quot;&gt;h3 header with 'header small-header' class&lt;/h3&gt;
-&lt;p&gt;Listening to technical and tech-light podcasts are a great way to ease yourself into the coding community. Check out these good ones:&lt;/p&gt;
+Listening to technical and tech-light podcasts are a great way to ease yourself into the coding community. Check out these good ones:
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.freecodecamp.com/the-best-podcasts-for-new-coders-and-the-best-tools-for-listening-to-them-df393b1c8dc#.2tw6sfg9f&quot;&gt;Best podcasts for new coders&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Sub-uls look like this:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.eventbrite.com/d/ny--brooklyn/hackathon/?crt=regular&amp;amp;slat=40.5926724&amp;amp;slng=-73.9888682&amp;amp;sort=best&amp;amp;view=list&quot;&gt;Brooklyn Hackathon Events&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://angelhack.com/&quot;&gt;AngelHack&lt;/a&gt;, a company that hosts hackathons in different cities.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+* [Best podcasts for new coders](https://medium.freecodecamp.com/the-best-podcasts-for-new-coders-and-the-best-tools-for-listening-to-them-df393b1c8dc#.2tw6sfg9f)
+* Sub-uls look like this:
+  * [Brooklyn Hackathon Events](https://www.eventbrite.com/d/ny--brooklyn/hackathon/?crt=regular&amp;slat=40.5926724&amp;slng=-73.9888682&amp;sort=best&amp;view=list)
+  * [AngelHack](http://angelhack.com/), a company that hosts hackathons in different cities.
 
-&lt;hr /&gt;
+&lt;hr&gt;
 
 &lt;h4&gt;And one more, plain h4&lt;/h4&gt;
 
-&lt;p&gt;Hackathons are great for collaborating with other developers in an intense way to build brand new projects from the ground up.&lt;/p&gt;
+Hackathons are great for collaborating with other developers in an intense way to build brand new projects from the ground up. --&gt;
 </description>
         <pubDate>Sun, 01 May 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/first-category/second-category/2016/05/01/example-post/</link>
-        <guid isPermaLink="true">http://localhost:4000/first-category/second-category/2016/05/01/example-post/</guid>
+        <link>http://localhost:4000/2016/05/01/example-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/01/example-post/</guid>
         
-        <category>first-tag</category>
-        
-        <category>second-tag</category>
-        
-        
-        <category>first-category</category>
-        
-        <category>second-category</category>
         
       </item>
     
