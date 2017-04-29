@@ -35,7 +35,7 @@ header {
 	visibility: hidden;
 	position: absolute;
   top: 0;
-  right: 13px;
+  left: 54%
 }
 
 #ion-social-github:hover + #social_github{
@@ -146,12 +146,7 @@ header {
 		text-align: center;
 	}
 }
-@media(min-width:992px) {
-	.post-title {
-		text-align: right;
-		padding-right: 30px;
-	}
-}
+
 .post-title {
 	.author {
 		text-transform: uppercase;
@@ -267,11 +262,7 @@ div#projects_clean {
 	}
 }
 
-@media(max-width:991px) {
-	#header_text {
-		padding-right: 10px;
-	}
-}
+
 
 .navbar-default .navbar-nav {
 	> li > a {
@@ -314,5 +305,20 @@ div.container.summary {
 @media (max-width: 1350px) {
 	header {
 		background-size: auto 44%;
+	}
+}
+				//up to 991
+@media(max-width:991px)  {
+	#header_text {
+		padding-right: 10%;
+	}
+	.find_me {
+		left: 63%;
+	}
+}
+@media(min-width:992px) {
+	.post-title {
+		text-align: right;
+		padding-right: 30px;
 	}
 }
