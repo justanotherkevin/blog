@@ -24,11 +24,10 @@ $url_1: url(/assets/production/images/winston.jpg);
 	font-weight: 700;
 }
 
-
 header {
 	height: 400px;
 	background: $url_0 no-repeat fixed;
-	background-size: 1400px 400px;
+	background-size: 100% auto;
 	position: relative;
 }
 .navbar-nav {
@@ -219,51 +218,41 @@ footer {
 		margin-bottom: 0;
 	}
 }
-.projects-clean {
+// PROJECT PANEL
+div#projects_clean {
+    background-color: #eeeeee;
+}
+.intro {
+  margin: 30px 150px;
 	background-color: $white;
-	color: $color_mine_shaft_approx;
-	p {
-		color: $color_gray_approx;
-	}
-	h2 {
-		font-weight: 700;
-		margin-bottom: 40px;
-		padding-top: 40px;
-		color: inherit;
-	}
-	.intro {
-		font-size: 16px;
-		max-width: 500px;
-		margin: 20px auto;
-		p {
-			margin-bottom: 0;
-		}
-	}
-	.projects {
-		padding-bottom: 40px;
-	}
-	.item {
-		text-align: center;
-		padding-top: 50px;
-		min-height: 425px;
-		.name {
-			font-weight: 700;
-			margin-top: 28px;
-			margin-bottom: 8px;
-			color: inherit;
+}
+.projects {
+	padding-bottom: 40px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+	.project_demo {
+		width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2%;
+		.img-responsive {
+			height: 200px;
+			margin: 0 auto;
 		}
 		.description {
-			font-size: 15px;
-			margin-top: 15px;
-			margin-bottom: 0;
+			max-height: 300px;
+			overflow-y: scroll;
 		}
 	}
 }
+
 @media(max-width:991px) {
 	#header_text {
 		padding-right: 10px;
 	}
 }
+
 .navbar-default .navbar-nav {
 	> li > a {
 		color: $color_mine_shaft_approx;
@@ -291,17 +280,19 @@ nav.navbar.navbar-default {
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	box-shadow: none;
 }
+
+// SUMMARY PANNEL
 div.container.summary {
-	background: $url_1 0 101px no-repeat fixed;
+	background: $url_1 0 -33px no-repeat fixed;
 	background-size: 1400px 100%;
 }
 .icon.header_icon {
 	margin: 30px;
 }
-.row.projects {
-	height: 400px;
-	overflow-y: scroll;
-	width: 90%;
-	margin: 20px auto;
-	border: 3px solid $black;
+
+// media queries
+@media (max-width: 1350px) {
+	header {
+		background-size: auto 44%;
+	}
 }
