@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Apr 2017 15:31:55 -0400</pubDate>
-    <lastBuildDate>Sat, 29 Apr 2017 15:31:55 -0400</lastBuildDate>
+    <pubDate>Sat, 29 Apr 2017 15:39:39 -0400</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 15:39:39 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>

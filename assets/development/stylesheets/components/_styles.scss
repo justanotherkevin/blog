@@ -307,6 +307,11 @@ div.container.summary {
 		background-size: auto 44%;
 	}
 }
+@media(max-width:400px) {
+	.projects .project_demo {
+    width: 100%;
+	}
+}
 				//up to 991
 @media(max-width:991px)  {
 	#header_text {
@@ -316,6 +321,7 @@ div.container.summary {
 		left: 63%;
 	}
 }
+			//greater than 992
 @media(min-width:992px) {
 	.post-title {
 		text-align: right;
