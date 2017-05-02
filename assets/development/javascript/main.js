@@ -25,3 +25,7 @@ $(document).ready(function(e){
   };
 
 });
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
